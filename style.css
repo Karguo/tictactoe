@@ -1,0 +1,27 @@
+body {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.game-board .box {
+    background-color: red;
+    border: 1px solid black;
+    width: 30%;
+    height: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 auto;
+}
+
