@@ -4,7 +4,34 @@
 // OR print "X" on first click, "O" on 2nd click and alternate? - display that it is player 1 or 2's turn clearly
 // create the winning scenarios -> win in a straight row OR win in a diagonal row
 
-// Find pattern:
-// create ONE box which can have "X" or "O" onclick, BUT cannot be clicked again or changed on another click
-// repeat pattern x 8 more times to create the board of 3x3 grid
+// basically :
+// draw gameboard --> completed? need to be more specific?
+// click to show "X" or "O"
+// who's turn is it?
+// did they win?
+// replay/reset game
 
+var playerOne = "X";
+var playerTwo = "O";
+
+// ? create 2 arrays... 1 for players, 1 for "X" or "O"
+// var players = [];
+// var xOrO = ["X", "O"];
+// var whoseTurn = 0;
+
+function play(clicked) {
+    clicked.innerText = "X";
+}
+
+function changePlayer() {
+    if (playerOne = 0) playerTwo = 1;
+    else playerOne = 0;
+}
+
+
+// var gameBoardBoxes = document.querySelectorAll('.game-board .box'); 
+// var gameBoard = document.querySelector('.game-board');
+// var box = document.querySelector('.box');
+
+
+// event.target.addEventListener('click', 'O');

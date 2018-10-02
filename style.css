@@ -1,5 +1,6 @@
-body {
-    background-color: green;
+* {
+    background-color: grey;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 h1 {
@@ -23,5 +24,17 @@ h1 {
     padding-left: 2px;
     padding-right: 2px;
     margin: 0 auto;
+    font-size: 100px;
+    text-align: center;
 }
 
+button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
