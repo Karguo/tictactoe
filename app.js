@@ -6,28 +6,45 @@
 
 // basically :
 // draw gameboard --> completed? need to be more specific?
-// click to show "X" or "O"
-// who's turn is it?
-// did they win?
+// click to show "X" or "O" --> completed
+// who's turn is it? change/toggle different player --> completed
+// did they win? check for winning scenarios
 // replay/reset game
 
-var playerOne = "X";
-var playerTwo = "O";
-
-// ? create 2 arrays... 1 for players, 1 for "X" or "O"
-// var players = [];
-// var xOrO = ["X", "O"];
-// var whoseTurn = 0;
+var playerOne = 1;
 
 function play(clicked) {
-    clicked.innerText = "X";
+    if (playerOne == 1) {
+        clicked.innerText = "X";
+        playerOne = 0;
+    } else {
+        clicked.innerText = "O";
+        playerOne = 1;
+    }
 }
 
-function changePlayer() {
-    if (playerOne = 0) playerTwo = 1;
-    else playerOne = 0;
-}
 
+
+// var updateBox = function(event) {
+//     if (event.target.classList.contains('clicked')) {
+//         return
+//     } else {
+//         counter++;
+//         event.target.classList.add('clicked');
+//         event.target.textContent = counter;
+//     } 
+// }
+
+// for (var i = 0; i < players.length; i++) {
+//     return 
+// }
+
+// *** works just for all X ***
+// function play(clicked) {
+//     clicked.innerText = "X";
+// }
+
+// document.querySelector('.message').innerText = players[whoseTurn] + " 's Turn Now";
 
 // var gameBoardBoxes = document.querySelectorAll('.game-board .box'); 
 // var gameBoard = document.querySelector('.game-board');
