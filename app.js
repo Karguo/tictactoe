@@ -8,49 +8,27 @@
 // draw gameboard --> completed? need to be more specific?
 // click to show "X" or "O" --> completed
 // who's turn is it? change/toggle different player --> completed
+// make sure can't override previous move/player --> completed
 // did they win? check for winning scenarios
+// display winner
 // replay/reset game
 
 var playerOne = 1;
 
 function play(game) {
-    if (playerOne == 1) {
+    if (event.target.classList.contains('clicked')){
+        return
+    } else if (playerOne == 1) {
         game.innerText = "X";
         playerOne = 0;
-        document.querySelector('.message').innerText = "Go Player Two!"
+        document.querySelector('.message').innerText = "Go Player Two!";
     } else {
         game.innerText = "O";
         playerOne = 1;
-        document.querySelector('.message').innerText = "Go Player One!"
+        document.querySelector('.message').innerText = "Go Player One!";
     }
+    event.target.classList.add('clicked');
 }
 
+// winning scenarios
 
-
-// var updateBox = function(event) {
-//     if (event.target.classList.contains('clicked')) {
-//         return
-//     } else {
-//         counter++;
-//         event.target.classList.add('clicked');
-//         event.target.textContent = counter;
-//     } 
-// }
-
-// for (var i = 0; i < players.length; i++) {
-//     return 
-// }
-
-// *** works just for all X ***
-// function play(clicked) {
-//     clicked.innerText = "X";
-// }
-
-// document.querySelector('.message').innerText = players[whoseTurn] + " 's Turn Now";
-
-// var gameBoardBoxes = document.querySelectorAll('.game-board .box'); 
-// var gameBoard = document.querySelector('.game-board');
-// var box = document.querySelector('.box');
-
-
-// event.target.addEventListener('click', 'O');
