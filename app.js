@@ -13,13 +13,15 @@
 
 var playerOne = 1;
 
-function play(clicked) {
+function play(game) {
     if (playerOne == 1) {
-        clicked.innerText = "X";
+        game.innerText = "X";
         playerOne = 0;
+        document.querySelector('.message').innerText = "Go Player Two!"
     } else {
-        clicked.innerText = "O";
+        game.innerText = "O";
         playerOne = 1;
+        document.querySelector('.message').innerText = "Go Player One!"
     }
 }
 
