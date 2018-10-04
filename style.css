@@ -1,11 +1,19 @@
 * {
-    background-color: grey;
-    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgb(92, 49, 23);
+    font-family: 'Rye', cursive;
+}
+
+body {
+    /* background-image: url('images/wanted.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
 }
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .message {
@@ -14,7 +22,7 @@ h1 {
     text-align: center;
 }
 
-.game-board {
+table {
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -23,21 +31,22 @@ h1 {
     justify-content: center;
 }
 
-.game-board .box {
-    background-color: red;
+.box {
+    background-color: rgb(255, 0, 0);
     border: 1px solid black;
-    width: 30%;
-    height: 30%;
+    width: 150px;
+    height: 150px;
     padding-left: 2px;
     padding-right: 2px;
     margin: 0 auto;
-    font-size: 100px;
     text-align: center;
+    font-size: 80px;
+    color: black;
 }
 
 button {
-    background-color: blue;
-    color: white;
+    background-color: red;
+    color: gold;
     font-size: 20px;
     border: 1px solid black;
     width: 100px;
