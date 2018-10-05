@@ -15,8 +15,9 @@ showing the winning scenarios/combinations.
 Decided to approach this every step-by-step of what is needed and create the necessary functions to achieving. 
 
 What I like: managed to animate my css/header to look like it has been typed.
+put a "wanted" poster on top of the "oak" background
 
 Unresolved Issues:
 How to show tie game,
-How to reset/replay game,
+How to reset/replay game - not using the reload function
 more CSS elements, intended to do more western-cowboy theme ala Wynonna Earp.

@@ -1,3 +1,5 @@
+var movesCount = 0;
+
 function startGame() {
     // start with one of the Player's turn
     document.turn = "X";
@@ -10,7 +12,7 @@ function startGame() {
     setMessage("Go Player " + document.turn + "!");
 }
 
-// set what the message is going to say
+// set what messages are going to say
 function setMessage(msg) {
     document.querySelector('.message').innerText = msg;
 }
@@ -21,6 +23,7 @@ function setMessage(msg) {
 function nextMove(box) {
     if (document.winner != null) {
         setMessage("Player " + document.winner + " has already won the game!");
+        // movesCount++;
     } else if (box.innerText == "") {
     box.innerText = document.turn;
     switchTurn();
@@ -34,7 +37,7 @@ function nextMove(box) {
 // set to display message for player who won
 function switchTurn() {
     if (checkWin(document.turn)) {
-        setMessage("Congratulations, Player " + document.turn + "! You've won!");
+        setMessage("Congratulations, Player " + document.turn + " ! You've won!");
         document.winner = document.turn;
     } else if (document.turn == "X") {
         document.turn = "O";
@@ -80,8 +83,13 @@ function getBox(number) {
     return document.getElementById("b" + number).innerText;
 }
 
-// reset the game
-// clear the board?
-// function reset() {
-
+// set function to check if:
+  // all 9 boxes are occupied and
+  // no one has won
+// function checkDraw() {
+//     var result = checkWin(result);
+//     // for (var i = 0; i < 9; i++)
+//     if (result = false) {
+//         setMessage("Draw!")
+//     }
 // }
