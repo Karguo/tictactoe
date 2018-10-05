@@ -1,27 +1,30 @@
 * {
-    /* background-image: url("images/woodbackground.jpg");
-    background-position: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     font-family: 'Rye', cursive;
 }
 
 body {
     background-image: url("images/woodbackground.jpg");
-    /* background-image: url("images/blankwanted.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
 
+main {
+    background-image: url("images/wantedblank.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 h1 {
     text-align: center;
-    font-size: 80px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 60px;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    padding-top: 55px;
+    color: black;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 3.5s steps(50, end);
+    animation: typing 3.5s steps(30, end);
 }
 
 @keyframes typing {
@@ -34,6 +37,8 @@ h1 {
     padding: 30px;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    word-spacing: 7px;
+    color: brown;
 }
 
 table {
@@ -46,7 +51,7 @@ table {
 }
 
 .box {
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(174, 125, 51, 0.5);
     border: 1px solid black;
     width: 150px;
     height: 150px;
@@ -55,11 +60,12 @@ table {
     margin: 0 auto;
     text-align: center;
     font-size: 100px;
-    color: black;
+    color: rgb(224, 219, 209);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 button {
-    background-color: red;
+    background-color: rgba(174, 125, 51, 0.5);
     color: gold;
     font-size: 20px;
     border: 1px solid black;
