@@ -1,5 +1,5 @@
 # tictactoe
-Tic Tac Toe game for Project 1
+Tic Tac Toe game for Project 1: https://karguo.github.io/tictactoe/
 
 Tried many, many different ways in dealing with the game logic. Attempted to use arrays and calling objects but was not working as intended. 
 Working files directory is just one example of just my previous working js files. 
